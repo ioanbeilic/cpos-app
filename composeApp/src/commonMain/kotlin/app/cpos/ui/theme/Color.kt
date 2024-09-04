@@ -1,0 +1,57 @@
+package app.cpos.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+// Dark Theme Colors
+val BluePrimaryDark = Color(0xFF1A2B48)
+val BlueSecondaryDark = Color(0xFF23395B)
+val BlueTertiaryDark = Color(0xFF2B4C5E)
+val OnBlueDark = Color(0xFFD3D8E0)
+val BlueContainerDark = Color(0xFF162239)
+val OnBlueContainerDark = Color(0xFFB0B8C3)
+val OnBlueSecondaryDark = Color(0xFFBDC5CF)
+val BlueSecondaryContainerDark = Color(0xFF1F3047)
+val OnBlueSecondaryContainerDark = Color(0xFFC5CCD7)
+val OnBlueTertiaryDark = Color(0xFFDCE1E6)
+val OnBlueTertiaryContainerDark = Color(0xFFC0CAD1)
+val BlueTertiaryContainerDark = Color(0xFF224555)
+val BackgroundDark = Color(0xFF121212)
+val OnBackgroundDark = Color(0xFFE0E0E0)
+val SurfaceDark = Color(0xFF1E1E1E)
+val OnSurfaceDark = Color(0xFFF5F5F5)
+val SurfaceVariantDark = Color(0xFF2C2C2C)
+val OnSurfaceVariantDark = Color(0xFFCACACA)
+val ErrorDark = Color(0xFFCF6679)
+val OnErrorDark = Color(0xFF370617)
+val ErrorContainerDark = Color(0xFFB00020)
+val OnErrorContainerDark = Color(0xFFFFDAD4)
+val OutlineDark = Color(0xFF484848)
+
+// Light Theme Colors
+val BluePrimaryLight = Color(0xFF295E96)
+val BlueSecondaryLight = Color(0xFF3C6C99)
+val BlueTertiaryLight = Color(0xFF4B83AC)
+val OnBlueLight = Color(0xFFFFFFFF)
+val BlueContainerLight = Color(0xFF4285F4)
+val OnBlueContainerLight = Color(0xFF1A1A1A)
+val OnBlueSecondaryLight = Color(0xFFFAFAFA)
+val BlueSecondaryContainerLight = Color(0xFF5B8FC6)
+val OnBlueSecondaryContainerLight = Color(0xFF1C1C1C)
+val OnBlueTertiaryLight = Color(0xFFEBF4F8)
+val OnBlueTertiaryContainerLight = Color(0xFF1A2428)
+val BlueTertiaryContainerLight = Color(0xFF90CAF9)
+val BackgroundLight = Color(0xFFFFFFFF)
+val OnBackgroundLight = Color(0xFF1A1A1A)
+val SurfaceLight = Color(0xFFFAFAFA)
+val OnSurfaceLight = Color(0xFF1A1A1A)
+val SurfaceVariantLight = Color(0xFFECEFF1)
+val OnSurfaceVariantLight = Color(0xFF232323)
+val ErrorLight = Color(0xFFB3261E)
+val OnErrorLight = Color(0xFFFFFFFF)
+val ErrorContainerLight = Color(0xFFFDE7E7)
+val OnErrorContainerLight = Color(0xFF601410)
+val OutlineLight = Color(0xFF707070)
+
+val Transparent = Color(0, 255, 255, 255)
+
+
