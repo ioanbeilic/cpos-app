@@ -1,7 +1,11 @@
 package com.voavanga.pos.ui.navigation
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.paddingFromBaseline
 import androidx.compose.material3.*
 import androidx.compose.material3.MaterialTheme.colorScheme
@@ -17,15 +21,19 @@ fun NavBar(
 ) {
     var selectedDestination by remember { mutableStateOf<NavDestination>(NavDestination.Home) }
     val destinations =
-        listOf(NavDestination.Home, NavDestination.Notification, NavDestination.Profile,
-            NavDestination.Home)
-
+        listOf(
+            NavDestination.Home,
+            NavDestination.Notification,
+            NavDestination.Profile,
+            NavDestination.Menu
+        )
     NavigationBar(
         // modifier = modifier.background(MaterialTheme.colorScheme.inverseOnSurface),
-        containerColor = colorScheme.secondaryContainer,
+        // containerColor = colorScheme.secondaryContainer,
         // contentColor = colorScheme.onPrimaryContainer
         // containerColor = MaterialTheme.colorScheme.primary,
         // contentColor = MaterialTheme.colorScheme.onPrimary
+        tonalElevation = 0.dp,
 
 
     ) {

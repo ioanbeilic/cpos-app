@@ -36,14 +36,19 @@ fun NavRail(
 ) {
     var selectedDestination by remember { mutableStateOf<NavDestination>(NavDestination.Home) }
     val destinations =
-        listOf(NavDestination.Home, NavDestination.Notification, NavDestination.Profile,
-            NavDestination.Notification, NavDestination.Profile)
+        listOf(
+            NavDestination.Home,
+            NavDestination.Notification,
+            NavDestination.Profile,
+            NavDestination.Menu,
+
+        )
 
     NavigationRail(
-        modifier = Modifier,
-        containerColor = MaterialTheme.colorScheme.secondaryContainer
-            //.background(MaterialTheme.colorScheme.inverseOnSurface)
-            //.offset(x = (-1).dp),
+        modifier = Modifier.background(MaterialTheme.colorScheme.inverseOnSurface)
+            .offset(x = (-1).dp),
+        containerColor = MaterialTheme.colorScheme.background
+
         /*
         header = {
             IconButton(onClick = { /*TODO*/ }) {

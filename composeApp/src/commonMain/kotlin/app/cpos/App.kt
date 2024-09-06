@@ -2,6 +2,7 @@ package app.cpos
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -63,8 +65,8 @@ fun App(
             state = rememberTopAppBarState()
         )
 
-
         Surface(
+            color = MaterialTheme.colorScheme.background
         ) {
             Scaffold(
                 contentWindowInsets = WindowInsets(0.dp, 0.dp, 0.dp, 0.dp),
@@ -74,7 +76,15 @@ fun App(
                 topBar = {
                     TopBar(
                         scrollBehavior = scrollBehavior,
-                        showNavigationBottom = showNavigationBottom
+                        showNavigationBottom = showNavigationBottom,
+                        title = "Compose Multiplatform",
+                        canNavigateBack = false,
+                        onNavItemClick = { destination ->
+                            onNavItemClick(
+                                destination,
+                                navController
+                            )
+                        }
                     )
                 },
                 bottomBar = {

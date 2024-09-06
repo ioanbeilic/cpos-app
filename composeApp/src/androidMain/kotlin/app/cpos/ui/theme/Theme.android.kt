@@ -7,6 +7,7 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
@@ -27,7 +28,7 @@ actual fun AppTheme(darkTheme: Boolean, dynamicColor: Boolean, content: @Composa
     if(!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.secondaryContainer.toArgb()
+            window.statusBarColor = Color.Transparent.toArgb()
            // window.statusBarColor = colorScheme.surface.toArgb()
 
             WindowCompat.getInsetsController(

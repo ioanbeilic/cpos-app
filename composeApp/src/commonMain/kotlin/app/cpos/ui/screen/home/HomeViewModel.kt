@@ -1,4 +1,4 @@
-package com.voavanga.pos.ui.screen.home
+package app.cpos.ui.screen.home
 
 import androidx.lifecycle.ViewModel
 
